@@ -338,7 +338,7 @@
   <section class="hero">
     <div class="hero-pill">
       🌙 softly dedicated to
-      <strong><!-- His name here --> Your Favourite Person</strong>
+      <strong><!-- Derrick Teo --> My Favourite Person</strong>
     </div>
     <h1 class="hero-title">Happy Birthday to my favourite person</h1>
     <p class="hero-subtitle">
