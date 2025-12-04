@@ -386,8 +386,7 @@
       </p>
       <p>
         And yes, I also want this to be the start of your little <em>piggy bank</em>—
-        so that one day, I can live my dream as a stay-at-home girlfriend 😌💸
-        (kidding… unless? 😏)
+        so that one day, I can live my dream as a stay-at-home girlfriend�
       </p>
       <p class="center-note">Scroll, the story’s not done yet. ↓</p>
     </article>
@@ -492,11 +491,11 @@
       <div class="certificate-meta">
         <div>
           <span>Presented to</span><br />
-          <strong><!-- His name --> [Your Name Here]</strong>
+          <strong><!-- His name --> Derrick Teo Chen Wei</strong>
         </div>
         <div>
           <span>From</span><br />
-          <strong><!-- Your name --> [My Name Here]</strong>
+          <strong><!-- Your name --> Yu Yuen Choong</strong>
         </div>
         <div>
           <span>Occasion</span><br />
@@ -504,7 +503,7 @@
         </div>
         <div>
           <span>Date</span><br />
-          <strong><!-- e.g. 03 December 2025 --> [Date]</strong>
+          <strong><!-- e.g. 03 December 2025 --> 11th December 2025</strong>
         </div>
       </div>
 
