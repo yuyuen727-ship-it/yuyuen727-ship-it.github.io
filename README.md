@@ -341,6 +341,17 @@
       <strong><!-- Derrick Teo --> My Favourite Person</strong>
     </div>
     <h1 class="hero-title">Happy Birthday to my favourite person</h1>
+    <img src="IMG_1848.jpeg" alt="Us 💖" class="hero-photo" />
+.hero-photo {
+  width: min(320px, 70vw);
+  aspect-ratio: 4 / 5;          /* nice portrait shape; remove if you prefer natural ratio */
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-soft);
+  display: block;
+  margin: 4px auto 0;
+}
     <p class="hero-subtitle">
       A little scroll, a little chaos, and a birthday present that grows with you every year.
     </p>
@@ -386,7 +397,7 @@
       </p>
       <p>
         And yes, I also want this to be the start of your little <em>piggy bank</em>—
-        so that one day, I can live my dream as a stay-at-home girlfriend�
+        so that one day, I can live my dream as a stay-at-home girlfriend
       </p>
       <p class="center-note">Scroll, the story’s not done yet. ↓</p>
     </article>
@@ -516,6 +527,49 @@
             <th>Why this?</th>
           </tr>
         </thead>
+        <!-- Confetti library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+  // 1) Burst on page load
+  (function shootConfetti(durationMs = 1500) {
+    const end = Date.now() + durationMs;
+    (function frame() {
+      confetti({
+        particleCount: 4,
+        angle: 60,
+        spread: 55,
+        origin: { x: 0 }
+      });
+      confetti({
+        particleCount: 4,
+        angle: 120,
+        spread: 55,
+        origin: { x: 1 }
+      });
+      if (Date.now() < end) requestAnimationFrame(frame);
+    })();
+  })();
+
+  // 2) Another burst when the portfolio section (#page6) comes into view
+  const target = document.querySelector('#page6');
+  if ('IntersectionObserver' in window && target) {
+    const once = { fired: false };
+    new IntersectionObserver((entries, obs) => {
+      entries.forEach(e => {
+        if (e.isIntersecting && !once.fired) {
+          once.fired = true;
+          confetti({
+            particleCount: 120,
+            spread: 70,
+            origin: { y: 0.6 }
+          });
+          obs.disconnect();
+        }
+      });
+    }, { threshold: 0.3 }).observe(target);
+  }
+</script>
         <tbody>
           <tr>
             <td>U.S. Market (S&amp;P 500)</td>
