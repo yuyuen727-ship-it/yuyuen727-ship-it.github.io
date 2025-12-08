@@ -61,6 +61,15 @@
       font-size: clamp(1.1rem, 3vw, 1.6rem);
       color: var(--text-muted);
     }
+    .evo-gif {
+  width: min(360px, 80vw);
+  display: block;
+  margin: 6px auto 2px;
+  border: none;
+  box-shadow: none;
+  background: transparent;
+  border-radius: 0;
+  }
     .start-btn {
       border: 1px solid var(--border-soft);
       background: #ffffff;
