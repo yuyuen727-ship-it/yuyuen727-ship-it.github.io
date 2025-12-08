@@ -5,7 +5,7 @@
   <title>Happy Birthday ♡</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500;600&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -36,44 +36,57 @@
     main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
     @media (min-width: 768px) { main { padding: 40px 24px 96px; } }
 
-    /* HERO */
-    .hero {
-      min-height: 72vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      gap: 18px;
+    /* LANDING (first screen) */
+    .landing {
+      min-height: 86vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      text-align: center; gap: 18px;
     }
-    .hero-pill {
+    .landing .hero-pill {
       display: inline-flex; align-items: center; gap: 8px;
       padding: 8px 18px; border-radius: var(--radius-pill);
       background: var(--accent-soft);
       border: 1px solid rgba(244, 184, 197, 0.25);
       font-size: 0.85rem; color: var(--text-muted);
     }
-    .hero-title {
-      font-family: "Playfair Display", serif;
-      font-size: clamp(2.1rem, 4vw, 2.9rem);
-      letter-spacing: 0.03em;
+    .pixel-title {
+      font-family: "Press Start 2P", system-ui, monospace;
+      font-size: clamp(1.2rem, 3.4vw, 2.1rem);
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+      text-transform: none;
     }
-    .hero-subtitle {
-      max-width: 520px; margin: 0 auto;
-      font-size: 0.98rem; color: var(--text-muted);
+    .pixel-sub {
+      font-family: "VT323", monospace;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      color: var(--text-muted);
     }
-    .hero-photo {
-      width: min(320px, 70vw);
-      aspect-ratio: 4 / 5;
+    .evo-gif {
+      width: min(360px, 80vw);
+      aspect-ratio: 1 / 1;
       object-fit: cover;
       border-radius: 22px;
       box-shadow: var(--shadow-soft);
       border: 1px solid var(--border-soft);
       display: block;
-      margin: 4px auto 0;
+      margin: 6px auto 2px;
     }
+    .start-btn {
+      border: 1px solid var(--border-soft);
+      background: #ffffff;
+      padding: 12px 18px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-weight: 700;
+      box-shadow: var(--shadow-soft);
+      transition: transform var(--transition), box-shadow var(--transition), background var(--transition);
+      font-family: "Press Start 2P", monospace;
+      font-size: 0.78rem;
+    }
+    .start-btn:active { transform: translateY(1px); }
+    .start-row { display: flex; gap: 12px; align-items: center; justify-content: center; margin-top: 6px; }
 
-    /* PAGE CARD */
+    /* STORY CARD PAGES */
     .section { padding: 24px 0; }
     .card {
       background: var(--card-bg);
@@ -81,12 +94,9 @@
       padding: 24px 20px;
       box-shadow: var(--shadow-soft);
       border: 1px solid var(--border-soft);
-      max-width: 720px;
-      margin: 0 auto;
-      position: relative;
-      overflow: hidden;
-      opacity: 0;
-      transform: translateY(8px);
+      max-width: 720px; margin: 0 auto;
+      position: relative; overflow: hidden;
+      opacity: 0; transform: translateY(8px);
       transition: opacity 260ms var(--transition), transform 260ms var(--transition);
     }
     .card.show { opacity: 1; transform: translateY(0); }
@@ -95,47 +105,30 @@
       background: radial-gradient(circle at top right, rgba(244,184,197,0.14), transparent 55%);
       pointer-events: none;
     }
-    .card-header {
-      display: flex; align-items: center; justify-content: space-between;
-      margin-bottom: 12px; gap: 12px;
-    }
+    .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 12px; }
     .card-tag {
-      font-size: 0.78rem; padding: 4px 10px;
-      border-radius: var(--radius-pill);
-      background: rgba(244,184,197,0.09);
-      border: 1px dashed rgba(244,184,197,0.6);
-      color: var(--text-muted);
+      font-size: 0.78rem; padding: 4px 10px; border-radius: var(--radius-pill);
+      background: rgba(244,184,197,0.09); border: 1px dashed rgba(244,184,197,0.6); color: var(--text-muted);
     }
     .card-page { font-size: 0.78rem; color: var(--text-muted); }
-    .card h2 {
-      font-family: "Playfair Display", serif; font-size: 1.25rem; margin-bottom: 10px;
-    }
+    .card h2 { font-family: "Playfair Display", serif; font-size: 1.25rem; margin-bottom: 10px; }
     .card p + p { margin-top: 10px; }
     .chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 6px; font-size: 0.8rem; }
-    .chip {
-      padding: 4px 9px; border-radius: var(--radius-pill);
-      background: #fff; border: 1px solid #f0ddd4; color: var(--text-muted);
-    }
+    .chip { padding: 4px 9px; border-radius: var(--radius-pill); background: #fff; border: 1px solid #f0ddd4; color: var(--text-muted); }
     .muted { color: var(--text-muted); font-size: 0.9rem; }
     .center-note { text-align: center; margin-top: 10px; font-size: 0.9rem; color: var(--text-muted); }
     .divider { max-width: 72px; height: 1px; background: linear-gradient(to right, transparent, var(--border-soft), transparent); margin: 26px auto; }
 
     /* NAV */
-    .nav {
-      display: flex; align-items: center; justify-content: space-between;
-      gap: 12px; max-width: 720px; margin: 16px auto 0;
-    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; max-width: 720px; margin: 16px auto 0; }
     .btn {
-      border: 1px solid var(--border-soft);
-      background: #fff; padding: 10px 16px; border-radius: 12px;
+      border: 1px solid var(--border-soft); background: #fff; padding: 10px 16px; border-radius: 12px;
       cursor: pointer; font-weight: 500; transition: transform var(--transition), box-shadow var(--transition);
       box-shadow: var(--shadow-soft);
     }
     .btn[disabled] { opacity: 0.45; cursor: not-allowed; }
     .btn:active { transform: translateY(1px); }
-    .progress {
-      flex: 1; text-align: center; color: var(--text-muted); font-size: 0.92rem;
-    }
+    .progress { flex: 1; text-align: center; color: var(--text-muted); font-size: 0.92rem; }
 
     /* CERTIFICATE (Page 6) */
     .portfolio-header { text-align: center; margin-bottom: 20px; }
@@ -163,55 +156,50 @@
 
     /* Confetti GIF overlay (optional; requires confetti.gif in repo) */
     .confetti-overlay {
-      position: fixed; inset: 0;
-      background: url('confetti.gif') center/cover no-repeat;
-      pointer-events: none;
-      animation: confettiFade 2.2s ease-out forwards;
-      z-index: 9999; display: none;
+      position: fixed; inset: 0; background: url('confetti.gif') center/cover no-repeat;
+      pointer-events: none; animation: confettiFade 2.2s ease-out forwards; z-index: 9999; display: none;
     }
     @keyframes confettiFade { 0%{opacity:0} 10%{opacity:1} 100%{opacity:0} }
 
-    /* hide all pages by default */
-    .page { display: none; }
-    .page.active { display: block; }
+    /* visibility toggles */
+    #storySection { display: none; }
   </style>
 </head>
 <body>
 
-<!-- Optional GIF overlay (shows when JS toggles it) -->
+<!-- Optional GIF overlay -->
 <div class="confetti-overlay" id="gifConfetti" aria-hidden="true"></div>
 
 <main>
-  <!-- HERO (kept as-is) -->
-  <section class="hero">
+  <!-- LANDING SCREEN -->
+  <section class="landing" id="landing">
     <div class="hero-pill">🌙 softly dedicated to <strong>My Favourite Person</strong></div>
-    <h1 class="hero-title">Happy Birthday to my favourite person</h1>
 
-    <!-- Your uploaded photo -->
-    <img src="IMG_1848.jpeg" alt="Us 💖" class="hero-photo" />
+    <!-- Your evolution GIF (rename if needed) -->
+    <img src="evolution.gif" alt="His evolution phases" class="evo-gif" />
 
-    <p class="hero-subtitle">
-      A little click, a little chaos, and a birthday present that grows with you every year.
-    </p>
+    <!-- Pixelated headline -->
+    <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
+
+    <!-- Pixelated subheading -->
+    <div class="pixel-sub">Are you ready for this gift that I’ve prepared for you?</div>
+
+    <!-- Start button -->
+    <div class="start-row">
+      <button class="start-btn" id="startBtn">Start ▶</button>
+    </div>
   </section>
 
-  <!-- PAGES (click-through) -->
-  <section class="section">
-    <!-- PAGE CONTENT WRAPPER -->
+  <!-- STORY SECTION (hidden until Start) -->
+  <section class="section" id="storySection">
     <article class="card show" id="card">
-      <!-- Header (updates via JS) -->
       <div class="card-header">
         <div class="card-tag" id="pageTag">Page 1 · The Start</div>
         <div class="card-page" id="pageCounter">1 / 6</div>
       </div>
-
-      <!-- Dynamic page body -->
-      <div id="pageBody">
-        <!-- JS injects page HTML here -->
-      </div>
+      <div id="pageBody"></div>
     </article>
 
-    <!-- Nav -->
     <div class="nav">
       <button class="btn" id="prevBtn" disabled>← Back</button>
       <div class="progress" id="progressText">Page 1 of 6</div>
@@ -220,10 +208,10 @@
   </section>
 </main>
 
-<!-- canvas-confetti -->
+<!-- Confetti (JS) -->
 <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
-  // ------- PAGE DATA -------
+  // ---------- PAGE DATA ----------
   const PAGES = [
     {
       tag: "Page 1 · The Start",
@@ -342,7 +330,11 @@
     }
   ];
 
-  // ------- RENDERING & NAV -------
+  // ---------- DOM ----------
+  const landing = document.getElementById('landing');
+  const storySection = document.getElementById('storySection');
+  const startBtn = document.getElementById('startBtn');
+
   const card = document.getElementById('card');
   const pageTag = document.getElementById('pageTag');
   const pageCounter = document.getElementById('pageCounter');
@@ -352,7 +344,7 @@
   const progressText = document.getElementById('progressText');
   const gifConfetti = document.getElementById('gifConfetti');
 
-  let i = 0; // current page index
+  let i = 0;
 
   function render(idx) {
     const p = PAGES[idx];
@@ -364,13 +356,10 @@
     prevBtn.disabled = idx === 0;
     nextBtn.textContent = idx === PAGES.length - 1 ? 'Finish' : 'Next →';
 
-    // nice little fade
     card.classList.remove('show');
     requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('show')));
 
-    // special effects
     if (idx === PAGES.length - 1) {
-      // big confetti and optional GIF overlay
       fireConfetti(1200, true);
       if (gifConfetti) {
         gifConfetti.style.display = 'block';
@@ -384,26 +373,27 @@
 
   prevBtn.addEventListener('click', prev);
   nextBtn.addEventListener('click', () => {
-    if (i === PAGES.length - 1) {
-      // on Finish, loop back to start
-      i = 0;
-    } else {
-      i++;
-    }
+    if (i === PAGES.length - 1) { i = 0; } else { i++; }
     render(i);
   });
 
-  // Keyboard: ← / →
+  // Start button: hide landing, show story, confetti, render first page
+  startBtn.addEventListener('click', () => {
+    landing.style.display = 'none';
+    storySection.style.display = 'block';
+    render(0);
+    fireConfetti(900, false);
+    storySection.scrollIntoView({ behavior: 'smooth' });
+  });
+
+  // Keyboard nav after start
   window.addEventListener('keydown', (e) => {
+    if (storySection.style.display !== 'block') return;
     if (e.key === 'ArrowRight') next();
     if (e.key === 'ArrowLeft') prev();
   });
 
-  // initial render + small confetti on load
-  render(i);
-  fireConfetti(1000, false);
-
-  // ------- CONFETTI -------
+  // ---------- Confetti helper ----------
   function fireConfetti(durationMs = 1200, big = false) {
     const end = Date.now() + durationMs;
     (function frame() {
