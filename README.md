@@ -175,8 +175,8 @@
   <section class="landing" id="landing">
     <div class="hero-pill">🌙 softly dedicated to <strong>My Favourite Person</strong></div>
 
-    <!-- Your evolution GIF (rename if needed) -->
-    <img src="evolution.gif" alt="His evolution phases" class="evo-gif" />
+    <!-- Your Untitled design.gif -->
+    <img src="Untitled design.gif" alt="His evolution phases" class="evo-gif" />
 
     <!-- Pixelated headline -->
     <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
