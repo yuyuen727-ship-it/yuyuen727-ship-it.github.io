@@ -479,7 +479,7 @@
       count: "6 / 6",
       html: `
         <h2>Your next steps</h2>
-        <p>Here’s a small head start. I’ve gathered a few places and ideas for you to explore, learn, and track the things you’re curious about. Think of this as your mini resource board.</p>
+        <p>Here’s a rough guidelines. IDK how much you've heard about investing & im not a guru either. However, here's all the reads & tools I've used throughout. Hope it helps :)</p>
 
         <div class="resources-grid">
           <article class="resource-card">
