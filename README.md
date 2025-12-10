@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -27,7 +26,7 @@
 
     body {
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at top left, #ffe9f0 0, #fdf8f5 35%, #fefefe 70%);
+      background: radial-gradient(circle at top left, #f7f9fc 0, #e4e9f0 35%, #d9e2f3 70%);
       color: var(--text-main);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
@@ -393,7 +392,7 @@
         <p>And looking at you now, you’ve glowed and grown in the best way possible.</p>
         <p>You’re becoming someone stronger, softer, wiser and someone I’m very, very proud of.</p>
         <p>I hope moving forward, you learn not to be so harsh on yourself, to lean on people who make you feel safe, and to create a safe space for yourself too.</p>
-        <p>Also, do you still remember when you asked if we should have a shared savings, so we can save little by little, month by month…</p>
+        <p>Kesimpulannya, do you still remember when you asked if we should have a shared savings, so we can save little by little, month by month…</p>
         <p><strong>Well...</strong></p>
       `
     },
@@ -490,7 +489,7 @@
             <div class="resource-links">
               <a href="https://www.youtube.com/@MrMoneyTV" target="_blank">@MrMoneyTV</a>
               <a href="https://www.youtube.com/@finance.lang88" target="_blank">@finance.lang88</a>
-              <a href="https://www.youtube.com/watch?v=nLyzSCqwdUQ" target="_blank">Daily Uncle Morning News</a>
+              <a href="https://www.youtube.com/@investorsbusinessdaily/videos" target="_blank">Daily Uncle Morning News</a>
             </div>
           </article>
 
@@ -518,7 +517,7 @@
                 <li><a href="https://www.youtube.com/@finance.lang88" target="_blank">@finance.lang88</a></li>
                 <li><a href="https://www.youtube.com/@WarrenBuffettAcademy" target="_blank">@WarrenBuffettAcademy</a></li>
                 <li><a href="https://www.youtube.com/@MarkRoussinCPA" target="_blank">@MarkRoussinCPA</a></li>
-                <li><a href="https://www.youtube.com/watch?v=nLyzSCqwdUQ" target="_blank">Daily Uncle Morning News</a></li>
+                <li><a href="https://www.youtube.com/@investorsbusinessdaily/videos" target="_blank">Daily Uncle Morning News</a></li>
               </ul>
             </div>
           </div>
