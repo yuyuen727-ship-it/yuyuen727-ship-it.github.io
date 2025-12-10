@@ -117,7 +117,7 @@
   inset: 0;
   background: radial-gradient(circle at top right, rgba(138,151,168,0.14), transparent 55%);
   pointer-events: none;
-}
+    }
     .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 12px; }
     .card-tag {
       font-size: 0.78rem; padding: 4px 10px; border-radius: var(--radius-pill);
