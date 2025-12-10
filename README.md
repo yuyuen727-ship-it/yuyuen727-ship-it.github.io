@@ -549,9 +549,14 @@
         </div>
 
         <p class="center-note" style="margin-top:18px;">
-          PS: Even Moomoo wants to celebrate you. Don’t forget to claim all your free cash vouchers and stocks before they expire tomorrow
-        </p>
-      `
+  PS: Even Moomoo wants to celebrate you. Don’t forget to 
+  <a href="https://www.moomoo.com/my/promotion/welcome?fbclid=PAQ0xDSwOd-_1leHRuA2FlbQIxMQBzcnRjBmFwcF9pZA8xMjQwMjQ1NzQyODc0MTQAAaczBkq85NL_ZRq_iylsHpiA8v6av6fb9Mwni9reIbndiBedl47fu-vGd0jF1w_aem_RChqaY7OM0CXbhmC9gT2tA&global_content=%7B%22promote_content%22:%223466%22,%22promote_id%22:14593,%22promote_manager%22:88,%22promote_type%22:37,%22sub_promote_id%22:2,%22sub_promote_manager%22:1294%7D"
+     target="_blank"
+     style="text-decoration: underline; color: inherit;">
+    claim all your free cash vouchers and stocks
+  </a>
+  before they expire tomorrow.
+</p>     `
     }
   ];
 
