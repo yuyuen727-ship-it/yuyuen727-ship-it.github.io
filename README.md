@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -295,7 +296,7 @@
     </div>
 
     <!-- evolution image (replace filename if needed) -->
-    <img src="BackgroundDFace.png" alt="His evolution phases" class="evo-gif" />
+    <img src="babyteo-heads.png" alt="His evolution phases" class="evo-gif" />
 
     <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
 
@@ -335,10 +336,10 @@
       tag: "Page 1 · The Start",
       count: "1 / 6",
       html: `
-        <h2>Happy Birthday, Baby Teo</h2>
-        <p>You’re finally turning 25. I hope you like this gift I prepared for you (with a tiny bit of help from your bestie too 🫢).</p>
-        <p>It’s something that relates to what you’re doing now, reflects your personality, and hopefully becomes something that grows over time, just like you.</p>
-        <p>25 is such a confusing age. People expect us to suddenly be financially independent, but no one really teaches us how. There’s a lot of trial and error, a lot of learning on the go, and maybe even a little bit of feeling lost as you try to figure out your direction in life… or start pampering your girlfriend (aka me 😌).</p>
+        <h2>Happy Birthday, Baby Teo.</h2>
+        <p>You’re finally turning 25, the age everyone jokes about, the age nobody prepares you for, the age where we’re expected to be financially independent but… no one really teaches us how.</p>
+        <p>I hope you like this little gift I prepared for you (with a tiny bit of help from your bestie too hehe). It’s something that reflects who you are, relates to what you’re doing now, and just like you, something I hope will grow over time.</p>
+        <p>25 feels like a weird in-between stage: you’re trying to figure out life, maybe feeling a little lost at times, learning through trial and error, or… starting to pamper your girlfriend (aka ME).</p>
         <p class="center-note">Tap <em>Next</em> when you’re ready. The surprise is just beginning.</p>
       `
     },
@@ -346,11 +347,11 @@
       tag: "Page 2 · Quarter Life",
       count: "2 / 6",
       html: `
-        <h2>Twenty–five and the so-called crisis</h2>
-        <p>Being 25 also means you now have all the “adult money” to buy whatever you want, including every Ben 10 watch you didn’t get to have as a kid 🤭.</p>
-        <p>But beyond the jokes, I want you to know something. When I look at you, I don’t see someone struggling through a quarter-life crisis.</p>
-        <p>I see someone building a life with intention, courage, and so much heart. Someone who moves with purpose. Someone who takes their time to think about the long run, even when the present feels messy.</p>
-        <p>And that’s something I admire deeply in you.</p>
+        <h2>Quarter life</h2>
+        <p>Turning 25 means you now have all the “adult money” to buy whatever you want, including every Ben 10 watches you couldn’t get as a kid.</p>
+        <p>But beyond that, I want you to know something: when I look at you, I don’t see someone in a crisis.</p>
+        <p>I see someone building a life with intention, courage, and so much heart. Someone who doesn’t rush, but chooses carefully. Someone who thinks long-term, even when life feels messy.</p>
+        <p>That’s something rare. And something I admire deeply.</p>
       `
     },
     {
@@ -371,29 +372,34 @@
       `
     },
     {
-      tag: "Page 4 · The Quiet Days",
+      tag: "Page 4 · For the days that feel heavy",
       count: "4 / 6",
       html: `
         <h2>For the days that feel heavy</h2>
-        <p>25 isn’t just another birthday. It’s a milestone, a chance to pause and look at how far you’ve come.</p>
-        <p>Your journey wasn’t always smooth. There were moments where things didn’t go your way, times where you felt rejected, unsure, or disappointed.</p>
-        <p>But each of those moments shaped you. And looking at you today, you’ve grown and glowed in the best possible way.</p>
-        <p>You’re becoming someone stronger, softer, and wiser, and someone I’m genuinely proud of.</p>
-        <p>As you move forward, I hope you learn to be gentle with yourself, to lean on the people who make you feel safe, and to allow yourself to create spaces where you feel supported and understood.</p>
+        <p>25 isn’t just another birthday. It’s a milestone, a chance to pause and look at how much your frontal lube has developed.</p>
+        <p>Your journey wasn’t always smooth. Some moments were tough. Sometimes you were rejected. Sometimes you failed. Sometimes things just didn’t go the way you hoped.</p>
+        <p>But that’s life — and every one of those moments shaped you into who you are today.</p>
+        <p>And looking at you now, you’ve glowed and grown in the best way possible.</p>
+        <p>You’re becoming someone stronger, softer, wiser — and someone I’m very, very proud of.</p>
+        <p>I hope moving forward, you learn not to be so harsh on yourself, to lean on people who make you feel safe, and to create a safe space for yourself too.</p>
+        <p>Also, do you still remember when you asked if we should have a shared savings, so we can save little by little, month by month…</p>
+        <p><strong>Well...</strong></p>
       `
     },
     {
       tag: "Page 5 · Your Birthday Present",
       count: "5 / 6",
       html: `
-        <h2>Your birthday present</h2>
-        <p>Your birthday present today is something that reflects who you are as a person.</p>
-        <p>(Yes, just like your birthday cake, the character development is real 🍰✨)</p>
+        <h2>Your Birthday Present</h2>
+        <p>This is the 2.5 of what I’ve been saving for you / us / my stay-at-home girlfriend agenda.</p>
+        <p>It’s also a present that reflects who you are. (&amp; yes, just like your birthday cake: the character development is real ✨)</p>
 
         <article class="certificate">
           <div class="certificate-header">
             <div class="certificate-title">Portfolio Gift Certificate</div>
-            <div class="certificate-subtitle">A small start to your compounding future (and my stay-at-home girlfriend agenda).</div>
+            <div class="certificate-subtitle">
+              A small start to your compounding future (and my stay-at-home girlfriend agenda).
+            </div>
           </div>
 
           <div class="certificate-meta">
@@ -405,24 +411,47 @@
 
           <table>
             <thead>
-              <tr><th>Investment</th><th>Ticker</th><th>Amount</th><th>Why this?</th></tr>
+              <tr>
+                <th>Investment</th>
+                <th>Ticker</th>
+                <th>Why this?</th>
+              </tr>
             </thead>
             <tbody>
-              <tr><td>U.S. Market (S&amp;P 500)</td><td>VOO</td><td>$____</td><td>Steady long-term growth, like your consistency.</td></tr>
-              <tr><td>Tech Growth (Nasdaq 100)</td><td>QQQ</td><td>$____</td><td>Your curious, future-focused brain in ETF form.</td></tr>
-              <tr><td>Gold / Hedge</td><td>—</td><td>$____</td><td>Stability when life (or the markets) feel uncertain.</td></tr>
-              <tr><td>Extra / Tech Stock</td><td>—</td><td>$____</td><td>A fun, higher-upside piece that feels like your playful, bold side.</td></tr>
-              <tr class="total-row"><td colspan="2"><strong>Total Portfolio Value</strong></td><td colspan="2">$________</td></tr>
+              <tr>
+                <td>U.S. Market (S&amp;P 500)</td>
+                <td>VOO</td>
+                <td>Steady long-term growth — just like your consistency.</td>
+              </tr>
+
+              <tr>
+                <td>Tech Growth (Nasdaq 100)</td>
+                <td>QQQM</td>
+                <td>Your curious, analytical, future-focused brain in ETF form.</td>
+              </tr>
+
+              <tr>
+                <td>Mining</td>
+                <td>—</td>
+                <td>A foundation-type sector that supports long-term global growth.</td>
+              </tr>
+
+              <tr>
+                <td>Other stocks of your interest</td>
+                <td>—</td>
+                <td>A flexible slot for anything that excites you — tech, growth, or whatever you’re curious about next.</td>
+              </tr>
             </tbody>
           </table>
         </article>
 
-        <p style="margin-top:14px;">This gift grows quietly in the background, the same way you have.</p>
-        <p>Life isn’t always stable, just like the stock market. When things feel shaky, you don’t panic; you pause, analyse your choices, check your heart, and stay grounded.</p>
+        <p style="margin-top:14px;">This is something that grows quietly in the background, the same way you have.</p>
+        <p>Like the stock market, life isn’t always stable. When things feel shaky, you don’t panic; you analyse your choices, you check your heart, you stay grounded.</p>
         <p>You don’t make decisions based on temporary circumstances.</p>
-        <p>And I don’t ever want you to treat investing, or your life, like a gamble. It’s not about luck. It’s about learning, trusting, studying, and believing in long-term value.</p>
+        <p>And I don’t ever want you to treat investing or your life like a gamble. It’s not luck. It’s learning, trusting, studying, and believing in long-term value.</p>
         <p>Even when things dip, if you understand the foundation, the growth plan, and the potential, you don’t walk away.</p>
         <p>Because stability doesn’t come from the market. It comes from <strong>you</strong>.</p>
+        <p><strong>PS:</strong> Doing it this way because you mentioned you haven't invested in any overseas markets, I can’t transfer you stocks, and most importantly… I don’t have your account details HAHAHA.</p>
       `
     },
     {
