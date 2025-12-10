@@ -10,12 +10,12 @@
     :root {
       --bg: #fdf8f5;
       --bg-alt: #f9f0ea;
-      --accent: #f4b8c5;
-      --accent-soft: rgba(244, 184, 197, 0.16);
+      --accent: #8a97a8;
+      --accent-soft: rgba(138, 151, 168, 0.16)
       --text-main: #2b2220;
       --text-muted: #8a7470;
       --card-bg: #ffffff;
-      --border-soft: #f0ddd4;
+      --border-soft: #d4d7dd;
       --shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.06);
       --radius-lg: 24px;
       --radius-pill: 999px;
@@ -53,7 +53,7 @@
       padding: 8px 18px;
       border-radius: var(--radius-pill);
       background: var(--accent-soft);
-      border: 1px solid rgba(244, 184, 197, 0.25);
+      border: 1px solid rgba(138,151,168,0.25);
       font-size: 0.85rem;
       color: var(--text-muted);
     }
@@ -114,7 +114,7 @@
     .card.show { opacity: 1; transform: translateY(0); }
     .card::before {
       content: ""; position: absolute; inset: 0;
-      background: radial-gradient(circle at top right, rgba(244,184,197,0.14), transparent 55%);
+      background: radial-gradient(circle at top right, rgba(138,151,168,0.14), transparent 55%);}
       pointer-events: none;
     }
     .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 12px; }
@@ -147,8 +147,8 @@
     .portfolio-header h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; margin-bottom: 4px; }
     .portfolio-header p { font-size: 0.95rem; color: var(--text-muted); }
     .certificate {
-      background: linear-gradient(135deg, #ffffff, #fdf4f6);
-      border-radius: 26px; border: 1px solid rgba(219,188,178,0.7);
+      background: linear-gradient(135deg, #ffffff, #e5e7ea);
+      border-radius: 26px; border: 1px solid rgba(180,185,195,0.7);
       padding: 24px 18px; box-shadow: var(--shadow-soft);
       max-width: 760px; margin: 14px auto 0;
     }
