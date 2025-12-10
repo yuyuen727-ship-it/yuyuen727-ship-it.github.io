@@ -36,40 +36,53 @@
     main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
     @media (min-width: 768px) { main { padding: 40px 24px 96px; } }
 
-    /* LANDING (first screen) */
-    .landing {
-      min-height: 86vh;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center; gap: 18px;
-    }
-    .landing .hero-pill {
-      display: inline-flex; align-items: center; gap: 8px;
-      padding: 8px 18px; border-radius: var(--radius-pill);
-      background: var(--accent-soft);
-      border: 1px solid rgba(244, 184, 197, 0.25);
-      font-size: 0.85rem; color: var(--text-muted);
-    }
-    .pixel-title {
-      font-family: "Press Start 2P", system-ui, monospace;
-      font-size: clamp(1.2rem, 3.4vw, 2.1rem);
-      line-height: 1.35;
-      letter-spacing: 0.02em;
-      text-transform: none;
-    }
-    .pixel-sub {
-      font-family: "VT323", monospace;
-      font-size: clamp(1.1rem, 3vw, 1.6rem);
-      color: var(--text-muted);
-    }
-    .evo-gif {
+  /* LANDING (first screen) */
+.landing {
+  min-height: 86vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 18px;
+}
+
+.landing .hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 18px;
+  border-radius: var(--radius-pill);
+  background: var(--accent-soft);
+  border: 1px solid rgba(244, 184, 197, 0.25);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.pixel-title {
+  font-family: "Press Start 2P", system-ui, monospace;
+  font-size: clamp(1.2rem, 3.4vw, 2.1rem);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.pixel-sub {
+  font-family: "VT323", monospace;
+  font-size: clamp(1.1rem, 3vw, 1.6rem);
+  color: var(--text-muted);
+}
+
+/* floating transparent image */
+.evo-gif {
   width: min(360px, 80vw);
+  height: auto;
   display: block;
-  margin: 6px auto 2px;
+  margin: 24px auto 6px;
   border: none;
   box-shadow: none;
   background: transparent;
   border-radius: 0;
-  }
+}
     .start-btn {
       border: 1px solid var(--border-soft);
       background: #ffffff;
@@ -171,23 +184,24 @@
 
 <main>
   <!-- LANDING SCREEN -->
-  <section class="landing" id="landing">
-    <div class="hero-pill">🌙 softly dedicated to <strong>My Favourite Person</strong></div>
+<section class="landing" id="landing">
+  <div class="hero-pill">
+    🌙 softly dedicated to <strong>My Favourite Person</strong>
+  </div>
 
-    <!-- Your D's Face pt 2 .png -->
-    <img src="D's Face pt 2 .png" alt="His evolution phases" class="evo-gif" />
+  <!-- evolution image (must be a PNG/GIF with real transparency) -->
+  <img src="Ds-face-pt2.png" alt="His evolution phases" class="evo-gif" />
 
-    <!-- Pixelated headline -->
-    <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
+  <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
 
-    <!-- Pixelated subheading -->
-    <div class="pixel-sub">Are you ready for this gift that I’ve prepared for you?</div>
+  <div class="pixel-sub">
+    Are you ready for this gift that I’ve prepared for you?
+  </div>
 
-    <!-- Start button -->
-    <div class="start-row">
-      <button class="start-btn" id="startBtn">Start ▶</button>
-    </div>
-  </section>
+  <div class="start-row">
+    <button class="start-btn" id="startBtn">Start ▶</button>
+  </div>
+</section>
 
   <!-- STORY SECTION (hidden until Start) -->
   <section class="section" id="storySection">
