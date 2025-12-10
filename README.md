@@ -306,7 +306,7 @@
     </div>
 
     <!-- evolution image (replace filename if needed) -->
-    <img src="BackgroundDFace.png" alt="His evolution phases" class="evo-gif" />
+    <img src="DgreyFace.png" alt="His evolution phases" class="evo-gif" />
 
     <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
 
