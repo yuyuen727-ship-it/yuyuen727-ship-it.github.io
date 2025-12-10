@@ -111,6 +111,10 @@
       opacity: 0; transform: translateY(8px);
       transition: opacity 260ms var(--transition), transform 260ms var(--transition);
     }
+    .card.show {
+  opacity: 1;
+  transform: translateY(0);
+   }
     .card::before {
   content: "";
   position: absolute;
