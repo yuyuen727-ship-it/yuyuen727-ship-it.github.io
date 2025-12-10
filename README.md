@@ -27,10 +27,12 @@
 
     body {
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at top left, #ffe9f0 0, #fdf8f5 35%, #fefefe 70%);
+      background: #00ff00;/* neon green just for testing */
+}
       color: var(--text-main);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
+      
     }
 
     main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
@@ -181,8 +183,6 @@
 
 <!-- Optional GIF overlay -->
 <div class="confetti-overlay" id="gifConfetti" aria-hidden="true"></div>
-body {
-  background: #00ff00; /* neon green just for testing */
 }
 <main>
   <!-- LANDING SCREEN -->
