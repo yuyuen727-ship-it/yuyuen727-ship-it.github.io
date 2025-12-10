@@ -192,7 +192,7 @@
   </div>
 
   <!-- evolution image (must be a PNG/GIF with real transparency) -->
-  <img src="updatedDface.png" alt="His evolution phases" class="evo-gif" />
+  <img src="BackgroundDFace.png" alt="His evolution phases" class="evo-gif" />
 
   <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
 
