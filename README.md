@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<Birthday-Present html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -175,11 +175,6 @@
     }
     @media (min-width: 640px) {
       .resources-grid {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-    @media (min-width: 900px) {
-      .resources-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
       }
     }
@@ -190,6 +185,11 @@
       box-shadow: var(--shadow-soft);
       padding: 14px 14px 16px;
       text-align: left;
+      transition: transform 160ms var(--transition), box-shadow 160ms var(--transition);
+    }
+    .resource-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 35px rgba(0,0,0,0.08);
     }
     .resource-tag {
       display: inline-block;
@@ -209,6 +209,17 @@
     .resource-card p {
       font-size: 0.88rem;
       color: var(--text-muted);
+    }
+    .resource-links {
+      margin-top: 8px;
+      font-size: 0.86rem;
+    }
+    .resource-links a {
+      display: block;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      color: var(--text-main);
+      margin-bottom: 3px;
     }
 
     /* Accordion (Page 6) */
@@ -459,25 +470,38 @@
       count: "6 / 6",
       html: `
         <h2>Your next steps</h2>
-        <p>Here’s a small head start. I’ve gathered a few places and ideas for you to explore, learn, and track the things you’re curious about. Think of this as your mini resource board.</p>
+        <p>Here’s a small head start. I'm not a guru but these are all the informations that can help you explore, learn, and track the things you’re curious about.</p>
 
         <div class="resources-grid">
           <article class="resource-card">
             <div class="resource-tag">News</div>
             <h3>Market &amp; ETF updates</h3>
             <p>Pick one or two reliable sources to check in with regularly so you’re aware of what’s happening in the world and in the markets.</p>
+            <div class="resource-links">
+              <a href="https://www.youtube.com/results?search_query=how+to+set+up+moomoo" target="_blank">How to set up MooMoo (YouTube search)</a>
+              <a href="AI%20Bubble%20Reads.pdf" target="_blank">AI Bubble Reads (PDF)</a>
+            </div>
           </article>
 
           <article class="resource-card">
             <div class="resource-tag">Learning</div>
             <h3>Beginner-friendly explainers</h3>
-            <p>Short videos, blog posts, or threads that break down concepts like ETFs, diversification, and compounding in simple language.</p>
+            <p>Short videos and creators that make money and investing feel more understandable and less scary.</p>
+            <div class="resource-links">
+              <a href="https://www.youtube.com/@MrMoneyTV" target="_blank">@MrMoneyTV</a>
+              <a href="https://www.youtube.com/@finance.lang88" target="_blank">@finance.lang88</a>
+            </div>
           </article>
 
           <article class="resource-card">
             <div class="resource-tag">Mindset</div>
             <h3>Long-term investing brain</h3>
-            <p>Content that reminds you to zoom out, focus on the big picture, and stay grounded when things feel noisy.</p>
+            <p>Content that reminds you to zoom out, think like an owner, and focus on long-term value over short-term noise.</p>
+            <div class="resource-links">
+              <a href="https://www.youtube.com/@WarrenBuffettAcademy" target="_blank">@WarrenBuffettAcademy</a>
+              <a href="https://www.youtube.com/@MarkRoussinCPA" target="_blank">@MarkRoussinCPA</a>
+              <a href="How%20to%20find%20the%20next%20100%20bagger%20in%20this%20AI%20Bubble.pdf" target="_blank">How to Find the Next 100-Bagger (PDF)</a>
+            </div>
           </article>
         </div>
 
@@ -489,8 +513,10 @@
             </button>
             <div class="accordion-panel">
               <ul>
-                <li><a href="https://example.com/guide-1" target="_blank" rel="noopener">Guide 1 (replace this with your own link)</a></li>
-                <li><a href="https://example.com/guide-2" target="_blank" rel="noopener">Guide 2 (replace this with your own link)</a></li>
+                <li><a href="https://www.youtube.com/@MrMoneyTV" target="_blank">@MrMoneyTV</a></li>
+                <li><a href="https://www.youtube.com/@finance.lang88" target="_blank">@finance.lang88</a></li>
+                <li><a href="https://www.youtube.com/@WarrenBuffettAcademy" target="_blank">@WarrenBuffettAcademy</a></li>
+                <li><a href="https://www.youtube.com/@MarkRoussinCPA" target="_blank">@MarkRoussinCPA</a></li>
               </ul>
             </div>
           </div>
@@ -502,8 +528,10 @@
             </button>
             <div class="accordion-panel">
               <ul>
-                <li><a href="https://example.com/etf-research" target="_blank" rel="noopener">ETF screener / factsheets</a></li>
-                <li><a href="https://example.com/stock-research" target="_blank" rel="noopener">Stock research or analysis site</a></li>
+                <li><a href="https://www.youtube.com/results?search_query=how+to+set+up+moomoo" target="_blank">How to set up MooMoo (YouTube search)</a></li>
+                <li><a href="AI%20Bubble%20Reads.pdf" target="_blank">AI Bubble Reads (PDF)</a></li>
+                <li><a href="How%20to%20find%20the%20next%20100%20bagger%20in%20this%20AI%20Bubble.pdf" target="_blank">How to Find the Next 100-Bagger (PDF)</a></li>
+                <li><a href="Jaya%20Tiasa%20Q1FY26%20Results%20Review_%20Printing%20Cash.pdf" target="_blank">Jaya Tiasa Q1FY26 Results Review (PDF)</a></li>
               </ul>
             </div>
           </div>
@@ -515,8 +543,7 @@
             </button>
             <div class="accordion-panel">
               <ul>
-                <li><a href="https://example.com/video" target="_blank" rel="noopener">A video I think you’ll like</a></li>
-                <li><a href="https://example.com/notes" target="_blank" rel="noopener">My own notes or a PDF I’ve saved for you</a></li>
+                <li>A space for future things I want to share with you — videos, screenshots, or little notes when I find something interesting for us 💛</li>
               </ul>
             </div>
           </div>
