@@ -451,7 +451,12 @@
                 <td>—</td>
                 <td>A flexible slot for anything that excites you; Other sector of ETFs, tech, growth, or whatever you’re curious about next.</td>
               </tr>
-            </tbody>
+               <tr class="total-row">
+    <td colspan="3">
+      <strong>Total Value Worth = 2.5 stocks of your choice</strong>
+    </td>
+  </tr>
+</tbody>
           </table>
         </article>
 
