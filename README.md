@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -31,59 +30,59 @@
       color: var(--text-main);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
-      
     }
 
     main { max-width: 960px; margin: 0 auto; padding: 24px 16px 64px; }
     @media (min-width: 768px) { main { padding: 40px 24px 96px; } }
 
-  /* LANDING (first screen) */
-.landing {
-  min-height: 86vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  gap: 18px;
-}
+    /* LANDING (first screen) */
+    .landing {
+      min-height: 86vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 18px;
+    }
 
-.landing .hero-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 18px;
-  border-radius: var(--radius-pill);
-  background: var(--accent-soft);
-  border: 1px solid rgba(244, 184, 197, 0.25);
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
+    .landing .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 18px;
+      border-radius: var(--radius-pill);
+      background: var(--accent-soft);
+      border: 1px solid rgba(244, 184, 197, 0.25);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
 
-.pixel-title {
-  font-family: "Press Start 2P", system-ui, monospace;
-  font-size: clamp(1.2rem, 3.4vw, 2.1rem);
-  line-height: 1.35;
-  letter-spacing: 0.02em;
-}
+    .pixel-title {
+      font-family: "Press Start 2P", system-ui, monospace;
+      font-size: clamp(1.2rem, 3.4vw, 2.1rem);
+      line-height: 1.35;
+      letter-spacing: 0.02em;
+    }
 
-.pixel-sub {
-  font-family: "VT323", monospace;
-  font-size: clamp(1.1rem, 3vw, 1.6rem);
-  color: var(--text-muted);
-}
+    .pixel-sub {
+      font-family: "VT323", monospace;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      color: var(--text-muted);
+    }
 
-/* floating transparent image */
-.evo-gif {
-  width: min(360px, 80vw);
-  height: auto;
-  display: block;
-  margin: 24px auto 6px;
-  border: none;
-  box-shadow: none;
-  background: transparent;
-  border-radius: 0;
-}
+    /* floating transparent image */
+    .evo-gif {
+      width: min(360px, 80vw);
+      height: auto;
+      display: block;
+      margin: 24px auto 6px;
+      border: none;
+      box-shadow: none;
+      background: transparent;
+      border-radius: 0;
+    }
+
     .start-btn {
       border: 1px solid var(--border-soft);
       background: #ffffff;
@@ -143,7 +142,7 @@
     .btn:active { transform: translateY(1px); }
     .progress { flex: 1; text-align: center; color: var(--text-muted); font-size: 0.92rem; }
 
-    /* CERTIFICATE (Page 6) */
+    /* CERTIFICATE (Page 5) */
     .portfolio-header { text-align: center; margin-bottom: 20px; }
     .portfolio-header h2 { font-family: "Playfair Display", serif; font-size: 1.6rem; margin-bottom: 4px; }
     .portfolio-header p { font-size: 0.95rem; color: var(--text-muted); }
@@ -151,7 +150,7 @@
       background: linear-gradient(135deg, #ffffff, #fdf4f6);
       border-radius: 26px; border: 1px solid rgba(219,188,178,0.7);
       padding: 24px 18px; box-shadow: var(--shadow-soft);
-      max-width: 760px; margin: 0 auto;
+      max-width: 760px; margin: 14px auto 0;
     }
     .certificate-header { text-align: center; margin-bottom: 18px; }
     .certificate-title { font-family: "Playfair Display", serif; font-size: 1.4rem; letter-spacing: 0.06em; text-transform: uppercase; }
@@ -166,6 +165,111 @@
     th, td { padding: 8px 6px; text-align: left; border-bottom: 1px solid #f0ded8; }
     th { font-weight: 600; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-muted); }
     .total-row td { border-top: 1px solid #e2c6bc; font-weight: 600; }
+
+    /* Pinterest-style resources grid (Page 6) */
+    .resources-grid {
+      margin-top: 16px;
+      display: grid;
+      gap: 12px;
+    }
+    @media (min-width: 640px) {
+      .resources-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    @media (min-width: 900px) {
+      .resources-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+    .resource-card {
+      background: #ffffff;
+      border-radius: 18px;
+      border: 1px solid #f0ddd4;
+      box-shadow: var(--shadow-soft);
+      padding: 14px 14px 16px;
+      text-align: left;
+    }
+    .resource-tag {
+      display: inline-block;
+      font-size: 0.74rem;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: rgba(244,184,197,0.14);
+      border: 1px solid rgba(244,184,197,0.4);
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .resource-card h3 {
+      font-size: 0.98rem;
+      margin-bottom: 4px;
+      font-weight: 600;
+    }
+    .resource-card p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    /* Accordion (Page 6) */
+    .accordion {
+      margin-top: 22px;
+      border-radius: 18px;
+      border: 1px solid #f0ddd4;
+      background: #ffffff;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+    .accordion-item + .accordion-item {
+      border-top: 1px solid #f0ddd4;
+    }
+    .accordion-header {
+      width: 100%;
+      padding: 10px 16px;
+      background: transparent;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 0.9rem;
+      text-align: left;
+    }
+    .accordion-header span:first-child {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+    .accordion-icon {
+      font-size: 1rem;
+      transition: transform 160ms ease;
+    }
+    .accordion-panel {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 16px;
+      transition: max-height 220ms ease, padding 220ms ease;
+    }
+    .accordion-panel ul {
+      list-style: disc;
+      padding-left: 18px;
+      margin: 6px 0 10px;
+    }
+    .accordion-panel li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 3px;
+    }
+    .accordion-panel a {
+      color: inherit;
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+    }
+    .accordion-item.open .accordion-panel {
+      max-height: 320px;
+      padding: 8px 16px 12px;
+    }
+    .accordion-item.open .accordion-icon {
+      transform: rotate(45deg);
+    }
 
     /* Confetti GIF overlay (optional; requires confetti.gif in repo) */
     .confetti-overlay {
@@ -182,27 +286,27 @@
 
 <!-- Optional GIF overlay -->
 <div class="confetti-overlay" id="gifConfetti" aria-hidden="true"></div>
-}
+
 <main>
   <!-- LANDING SCREEN -->
-<section class="landing" id="landing">
-  <div class="hero-pill">
-    🌙 softly dedicated to <strong>My Favourite Person</strong>
-  </div>
+  <section class="landing" id="landing">
+    <div class="hero-pill">
+      🌙 softly dedicated to <strong>My Favourite Person</strong>
+    </div>
 
-  <!-- evolution image (must be a PNG/GIF with real transparency) -->
-  <img src="BackgroundDFace.png" alt="His evolution phases" class="evo-gif" />
+    <!-- evolution image (replace filename if needed) -->
+    <img src="BackgroundDFace.png" alt="His evolution phases" class="evo-gif" />
 
-  <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
+    <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
 
-  <div class="pixel-sub">
+    <div class="pixel-sub">
       Are you ready to receive your birthday present?
-  </div>
+    </div>
 
-  <div class="start-row">
-    <button class="start-btn" id="startBtn">Start ▶</button>
-  </div>
-</section>
+    <div class="start-row">
+      <button class="start-btn" id="startBtn">Start ▶</button>
+    </div>
+  </section>
 
   <!-- STORY SECTION (hidden until Start) -->
   <section class="section" id="storySection">
@@ -231,21 +335,22 @@
       tag: "Page 1 · The Start",
       count: "1 / 6",
       html: `
-        <h2>The million options that didn’t feel like you</h2>
-        <p>I’ve thought of a million things to get you, but nothing really hit. Nothing felt right. Nothing felt like <strong>you</strong>.</p>
-        <p>So instead of buying something random, I decided to make something that actually matches who you are — slow, intentional, growing over time.</p>
-        <p class="center-note">When you’re ready, tap <em>Next</em>. The surprise is just getting started.</p>
+        <h2>Happy Birthday, Baby Teo</h2>
+        <p>You’re finally turning 25. I hope you like this gift I prepared for you (with a tiny bit of help from your bestie too 🫢).</p>
+        <p>It’s something that relates to what you’re doing now, reflects your personality, and hopefully becomes something that grows over time, just like you.</p>
+        <p>25 is such a confusing age. People expect us to suddenly be financially independent, but no one really teaches us how. There’s a lot of trial and error, a lot of learning on the go, and maybe even a little bit of feeling lost as you try to figure out your direction in life… or start pampering your girlfriend (aka me 😌).</p>
+        <p class="center-note">Tap <em>Next</em> when you’re ready. The surprise is just beginning.</p>
       `
     },
     {
       tag: "Page 2 · Quarter Life",
       count: "2 / 6",
       html: `
-        <h2>Twenty–five &amp; the so-called crisis</h2>
-        <p>They say 25 is when your quarter-life crisis begins. But when I look at you, I don’t see a crisis at all.</p>
-        <p>I see someone building a life with intention, courage, and so much heart. Someone who doesn’t rush, but thinks long-term.</p>
-        <p>And yes… I also secretly want this to be the start of your little piggy bank — so that one day, I can retire early and live my dream as your stay-at-home girlfriend 😌</p>
-        <p class="center-note">Tap <em>Next</em> whenever you’re ready to continue.</p>
+        <h2>Twenty–five and the so-called crisis</h2>
+        <p>Being 25 also means you now have all the “adult money” to buy whatever you want, including every Ben 10 watch you didn’t get to have as a kid 🤭.</p>
+        <p>But beyond the jokes, I want you to know something. When I look at you, I don’t see someone struggling through a quarter-life crisis.</p>
+        <p>I see someone building a life with intention, courage, and so much heart. Someone who moves with purpose. Someone who takes their time to think about the long run, even when the present feels messy.</p>
+        <p>And that’s something I admire deeply in you.</p>
       `
     },
     {
@@ -253,15 +358,16 @@
       count: "3 / 6",
       html: `
         <h2>The things I admire in you</h2>
-        <p>You carry so much value in who you are, not because of what you have, but because of what you’re made of:</p>
+        <p>These are the things I love most about you, not because of what you have, but because of what you’re made of:</p>
         <ul class="chips">
           <li class="chip">Genuine</li>
           <li class="chip">Not following the norm</li>
           <li class="chip">Grounded</li>
           <li class="chip">Caring</li>
+          <li class="chip">Guailan</li>
         </ul>
-        <p>These aren’t trends. They’re your fundamentals.</p>
-        <p>I hope these parts of you keep compounding every day, the same way you’ve grown into the person I love now.</p>
+        <p>These characteristics aren’t temporary phases. They are your foundations, the traits that make you, <strong>you</strong>.</p>
+        <p>I hope these parts of you continue to grow and compound every day, the same way you’ve become the person I love now.</p>
       `
     },
     {
@@ -269,38 +375,25 @@
       count: "4 / 6",
       html: `
         <h2>For the days that feel heavy</h2>
-        <p>I know some days are hard. Some days you just want to do nothing and not be responsible for anything at all.</p>
-        <p>And that’s okay.</p>
-        <p>Even on those days, your kindness still shows. Your heart still shows. Your presence still matters.</p>
-        <p>You’re allowed to rest. You’re allowed to pause. You’re still you — and you are still worth investing in, even on your lowest days.</p>
+        <p>25 isn’t just another birthday. It’s a milestone, a chance to pause and look at how far you’ve come.</p>
+        <p>Your journey wasn’t always smooth. There were moments where things didn’t go your way, times where you felt rejected, unsure, or disappointed.</p>
+        <p>But each of those moments shaped you. And looking at you today, you’ve grown and glowed in the best possible way.</p>
+        <p>You’re becoming someone stronger, softer, and wiser, and someone I’m genuinely proud of.</p>
+        <p>As you move forward, I hope you learn to be gentle with yourself, to lean on the people who make you feel safe, and to allow yourself to create spaces where you feel supported and understood.</p>
       `
     },
     {
-      tag: "Page 5 · 25 Years of You",
+      tag: "Page 5 · Your Birthday Present",
       count: "5 / 6",
       html: `
-        <h2>The glow &amp; the growth</h2>
-        <p>Thinking back on your journey to 25, I know it wasn’t always steady.</p>
-        <p>Sometimes you were rejected. Sometimes you failed. Sometimes things just didn’t go how you hoped.</p>
-        <p>But looking at you now, you’ve glowed and grown in the best way possible.</p>
-        <p class="skincare-note">(Next time can apply skincare also? I’ll help you — your personal skincare ETF manager 🧴)</p>
-        <p>You’ve become someone stronger, softer, and wiser over time. And this birthday present is something I feel truly reflects who you are.</p>
-        <p class="center-note">Hit <em>Next</em>. This is where it all comes together.</p>
-      `
-    },
-    {
-      tag: "Page 6 · Your Birthday Present",
-      count: "6 / 6",
-      html: `
-        <div class="portfolio-header">
-          <h2>A portfolio that grows with you</h2>
-          <p>Not just something to use once and forget, but something that grows quietly in the background — the same way you’ve been growing, year after year.</p>
-        </div>
+        <h2>Your birthday present</h2>
+        <p>Your birthday present today is something that reflects who you are as a person.</p>
+        <p>(Yes, just like your birthday cake, the character development is real 🍰✨)</p>
 
         <article class="certificate">
           <div class="certificate-header">
             <div class="certificate-title">Portfolio Gift Certificate</div>
-            <div class="certificate-subtitle">A small start to your compounding future (&amp; my stay-at-home girlfriend agenda).</div>
+            <div class="certificate-subtitle">A small start to your compounding future (and my stay-at-home girlfriend agenda).</div>
           </div>
 
           <div class="certificate-meta">
@@ -322,24 +415,87 @@
               <tr class="total-row"><td colspan="2"><strong>Total Portfolio Value</strong></td><td colspan="2">$________</td></tr>
             </tbody>
           </table>
+        </article>
 
-          <div class="certificate-footer" style="margin-top:12px;">
-            <p>This isn’t just money. It’s a quiet reminder that:</p>
-            <p style="margin-top:6px;">Your future matters. Your values are solid. You are someone worth investing in.</p>
-            <p style="margin-top:6px;">No matter where life takes you, I hope this reminds you that I believe in your future, your choices, and the life you’re building.</p>
+        <p style="margin-top:14px;">This gift grows quietly in the background, the same way you have.</p>
+        <p>Life isn’t always stable, just like the stock market. When things feel shaky, you don’t panic; you pause, analyse your choices, check your heart, and stay grounded.</p>
+        <p>You don’t make decisions based on temporary circumstances.</p>
+        <p>And I don’t ever want you to treat investing, or your life, like a gamble. It’s not about luck. It’s about learning, trusting, studying, and believing in long-term value.</p>
+        <p>Even when things dip, if you understand the foundation, the growth plan, and the potential, you don’t walk away.</p>
+        <p>Because stability doesn’t come from the market. It comes from <strong>you</strong>.</p>
+      `
+    },
+    {
+      tag: "Page 6 · Your Next Steps",
+      count: "6 / 6",
+      html: `
+        <h2>Your next steps</h2>
+        <p>Here’s a small head start. I’ve gathered a few places and ideas for you to explore, learn, and track the things you’re curious about. Think of this as your mini resource board.</p>
 
-            <div class="signature" style="margin-top:14px;">
-              <div class="sig-block">
-                <div class="sig-line">Signature</div>
-                <div class="muted">From me, with way too much love.</div>
-              </div>
-              <div class="sig-block">
-                <div class="sig-line">For</div>
-                <div class="muted">The birthday boy &amp; future millionaire. 💛📈</div>
-              </div>
+        <div class="resources-grid">
+          <article class="resource-card">
+            <div class="resource-tag">News</div>
+            <h3>Market &amp; ETF updates</h3>
+            <p>Pick one or two reliable sources to check in with regularly so you’re aware of what’s happening in the world and in the markets.</p>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-tag">Learning</div>
+            <h3>Beginner-friendly explainers</h3>
+            <p>Short videos, blog posts, or threads that break down concepts like ETFs, diversification, and compounding in simple language.</p>
+          </article>
+
+          <article class="resource-card">
+            <div class="resource-tag">Mindset</div>
+            <h3>Long-term investing brain</h3>
+            <p>Content that reminds you to zoom out, focus on the big picture, and stay grounded when things feel noisy.</p>
+          </article>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Beginner-friendly investing guides</span>
+              <span class="accordion-icon">＋</span>
+            </button>
+            <div class="accordion-panel">
+              <ul>
+                <li><a href="https://example.com/guide-1" target="_blank" rel="noopener">Guide 1 (replace this with your own link)</a></li>
+                <li><a href="https://example.com/guide-2" target="_blank" rel="noopener">Guide 2 (replace this with your own link)</a></li>
+              </ul>
             </div>
           </div>
-        </article>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>ETF &amp; stock research</span>
+              <span class="accordion-icon">＋</span>
+            </button>
+            <div class="accordion-panel">
+              <ul>
+                <li><a href="https://example.com/etf-research" target="_blank" rel="noopener">ETF screener / factsheets</a></li>
+                <li><a href="https://example.com/stock-research" target="_blank" rel="noopener">Stock research or analysis site</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <span>Videos, podcasts, and notes from me</span>
+              <span class="accordion-icon">＋</span>
+            </button>
+            <div class="accordion-panel">
+              <ul>
+                <li><a href="https://example.com/video" target="_blank" rel="noopener">A video I think you’ll like</a></li>
+                <li><a href="https://example.com/notes" target="_blank" rel="noopener">My own notes or a PDF I’ve saved for you</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="center-note" style="margin-top:18px;">
+          PS: Even Moomoo wants to celebrate you. Don’t forget to claim all your free cash vouchers and stocks before they expire tomorrow 😌
+        </p>
       `
     }
   ];
@@ -373,6 +529,8 @@
     card.classList.remove('show');
     requestAnimationFrame(() => requestAnimationFrame(() => card.classList.add('show')));
 
+    setupAccordion();
+
     if (idx === PAGES.length - 1) {
       fireConfetti(1200, true);
       if (gifConfetti) {
@@ -387,7 +545,11 @@
 
   prevBtn.addEventListener('click', prev);
   nextBtn.addEventListener('click', () => {
-    if (i === PAGES.length - 1) { i = 0; } else { i++; }
+    if (i === PAGES.length - 1) {
+      i = 0;
+    } else {
+      i++;
+    }
     render(i);
   });
 
@@ -406,6 +568,22 @@
     if (e.key === 'ArrowRight') next();
     if (e.key === 'ArrowLeft') prev();
   });
+
+  // Accordion setup (Page 6)
+  function setupAccordion() {
+    const items = pageBody.querySelectorAll('.accordion-item');
+    if (!items.length) return;
+    items.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      const panel = item.querySelector('.accordion-panel');
+      if (!header || !panel) return;
+      header.onclick = () => {
+        const isOpen = item.classList.contains('open');
+        items.forEach(i => i.classList.remove('open'));
+        if (!isOpen) item.classList.add('open');
+      };
+    });
+  }
 
   // ---------- Confetti helper ----------
   function fireConfetti(durationMs = 1200, big = false) {
