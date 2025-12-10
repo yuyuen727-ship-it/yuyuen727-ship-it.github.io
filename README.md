@@ -11,7 +11,7 @@
       --bg: #fdf8f5;
       --bg-alt: #f9f0ea;
       --accent: #8a97a8;
-      --accent-soft: rgba(138, 151, 168, 0.16)
+      --accent-soft: rgba(138, 151, 168, 0.16);
       --text-main: #2b2220;
       --text-muted: #8a7470;
       --card-bg: #ffffff;
@@ -111,12 +111,13 @@
       opacity: 0; transform: translateY(8px);
       transition: opacity 260ms var(--transition), transform 260ms var(--transition);
     }
-    .card.show { opacity: 1; transform: translateY(0); }
     .card::before {
-      content: ""; position: absolute; inset: 0;
-      background: radial-gradient(circle at top right, rgba(138,151,168,0.14), transparent 55%);}
-      pointer-events: none;
-    }
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(138,151,168,0.14), transparent 55%);
+  pointer-events: none;
+}
     .card-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; gap: 12px; }
     .card-tag {
       font-size: 0.78rem; padding: 4px 10px; border-radius: var(--radius-pill);
