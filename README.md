@@ -181,7 +181,9 @@
 
 <!-- Optional GIF overlay -->
 <div class="confetti-overlay" id="gifConfetti" aria-hidden="true"></div>
-
+body {
+  background: #00ff00; /* neon green just for testing */
+}
 <main>
   <!-- LANDING SCREEN -->
 <section class="landing" id="landing">
