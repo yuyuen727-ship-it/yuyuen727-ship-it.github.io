@@ -26,7 +26,7 @@
 
     body {
       font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-      background: radial-gradient(circle at top left, #f7f9fc 0, #e4e9f0 35%, #d9e2f3 70%);
+      background: radial-gradient(circle at top left, #fafbfc 0, #e5e7ea 35%, #cfd3d8 70%);
       color: var(--text-main);
       line-height: 1.7;
       -webkit-font-smoothing: antialiased;
