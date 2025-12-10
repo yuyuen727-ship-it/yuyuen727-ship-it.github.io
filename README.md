@@ -174,8 +174,8 @@
   <section class="landing" id="landing">
     <div class="hero-pill">🌙 softly dedicated to <strong>My Favourite Person</strong></div>
 
-    <!-- Your D's face.jpg -->
-    <img src="D's face.jpg" alt="His evolution phases" class="evo-gif" />
+    <!-- Your D's Face pt 2 .png -->
+    <img src="D's Face pt 2 .png" alt="His evolution phases" class="evo-gif" />
 
     <!-- Pixelated headline -->
     <h1 class="pixel-title">Happy 25th Birthday Baby Teo</h1>
