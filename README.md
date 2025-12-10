@@ -1,4 +1,4 @@
-<Birthday-Present html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -389,9 +389,9 @@
         <h2>For the days that feel heavy</h2>
         <p>25 isn’t just another birthday. It’s a milestone, a chance to pause and look at how much your frontal lube has developed.</p>
         <p>Your journey wasn’t always smooth. Some moments were tough. Sometimes you were rejected. Sometimes you failed. Sometimes things just didn’t go the way you hoped.</p>
-        <p>But that’s life — and every one of those moments shaped you into who you are today.</p>
+        <p>But that’s life and every one of those moments shaped you into who you are today.</p>
         <p>And looking at you now, you’ve glowed and grown in the best way possible.</p>
-        <p>You’re becoming someone stronger, softer, wiser — and someone I’m very, very proud of.</p>
+        <p>You’re becoming someone stronger, softer, wiser and someone I’m very, very proud of.</p>
         <p>I hope moving forward, you learn not to be so harsh on yourself, to lean on people who make you feel safe, and to create a safe space for yourself too.</p>
         <p>Also, do you still remember when you asked if we should have a shared savings, so we can save little by little, month by month…</p>
         <p><strong>Well...</strong></p>
@@ -403,7 +403,7 @@
       html: `
         <h2>Your Birthday Present</h2>
         <p>This is the 2.5 of what I’ve been saving for you / us / my stay-at-home girlfriend agenda.</p>
-        <p>It’s also a present that reflects who you are. (&amp; yes, just like your birthday cake: the character development is real ✨)</p>
+        <p>It’s also a present that reflects who you are.</p>
 
         <article class="certificate">
           <div class="certificate-header">
@@ -432,13 +432,13 @@
               <tr>
                 <td>U.S. Market (S&amp;P 500)</td>
                 <td>VOO</td>
-                <td>Steady long-term growth — just like your consistency.</td>
+                <td>Steady long-term growth; just like your consistency.</td>
               </tr>
 
               <tr>
                 <td>Tech Growth (Nasdaq 100)</td>
                 <td>QQQM</td>
-                <td>Your curious, analytical, future-focused brain in ETF form.</td>
+                <td>Your curious, analytical, future focused brain in ETF form.</td>
               </tr>
 
               <tr>
@@ -450,7 +450,7 @@
               <tr>
                 <td>Other stocks of your interest</td>
                 <td>—</td>
-                <td>A flexible slot for anything that excites you — tech, growth, or whatever you’re curious about next.</td>
+                <td>A flexible slot for anything that excites you; Other sector of ETFs, tech, growth, or whatever you’re curious about next.</td>
               </tr>
             </tbody>
           </table>
@@ -470,7 +470,7 @@
       count: "6 / 6",
       html: `
         <h2>Your next steps</h2>
-        <p>Here’s a small head start. I'm not a guru but these are all the informations that can help you explore, learn, and track the things you’re curious about.</p>
+        <p>Here’s a small head start. I’ve gathered a few places and ideas for you to explore, learn, and track the things you’re curious about. Think of this as your mini resource board.</p>
 
         <div class="resources-grid">
           <article class="resource-card">
@@ -490,6 +490,7 @@
             <div class="resource-links">
               <a href="https://www.youtube.com/@MrMoneyTV" target="_blank">@MrMoneyTV</a>
               <a href="https://www.youtube.com/@finance.lang88" target="_blank">@finance.lang88</a>
+              <a href="https://www.youtube.com/watch?v=nLyzSCqwdUQ" target="_blank">Daily Uncle Morning News</a>
             </div>
           </article>
 
@@ -517,6 +518,7 @@
                 <li><a href="https://www.youtube.com/@finance.lang88" target="_blank">@finance.lang88</a></li>
                 <li><a href="https://www.youtube.com/@WarrenBuffettAcademy" target="_blank">@WarrenBuffettAcademy</a></li>
                 <li><a href="https://www.youtube.com/@MarkRoussinCPA" target="_blank">@MarkRoussinCPA</a></li>
+                <li><a href="https://www.youtube.com/watch?v=nLyzSCqwdUQ" target="_blank">Daily Uncle Morning News</a></li>
               </ul>
             </div>
           </div>
@@ -535,22 +537,10 @@
               </ul>
             </div>
           </div>
-
-          <div class="accordion-item">
-            <button class="accordion-header">
-              <span>Videos, podcasts, and notes from me</span>
-              <span class="accordion-icon">＋</span>
-            </button>
-            <div class="accordion-panel">
-              <ul>
-                <li>A space for future things I want to share with you — videos, screenshots, or little notes when I find something interesting for us 💛</li>
-              </ul>
-            </div>
-          </div>
         </div>
 
         <p class="center-note" style="margin-top:18px;">
-          PS: Even Moomoo wants to celebrate you. Don’t forget to claim all your free cash vouchers and stocks before they expire tomorrow 😌
+          PS: Even Moomoo wants to celebrate you. Don’t forget to claim all your free cash vouchers and stocks before they expire tomorrow
         </p>
       `
     }
